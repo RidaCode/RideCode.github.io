@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Groups distribution choose a shift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Groups distribution choose a shift</h1>
+    <button class="shift-btn" id="afternoon-btn">العصر</button>
+    <button class="shift-btn" id="morning-btn">الصبح</button>
+    <div id="afternoon-content" style="display: none">
+      <h2>Afternoon Departure or Transit?</h2>
+      <button class="option-btn" id="departure-btn">مغادرة</button>
+      <button class="option-btn" id="transit-btn">ترانزيت</button>
+    </div>
+    <div id="morning-content" style="display: none">
+      <h2>Morning Departure or Transit?</h2>
+      <button class="option-btn" id="option1-btn">مغادرة</button>
+      <button class="option-btn" id="option2-btn">ترانزيت</button>
+    </div>
+    <h2 id="group-title" class="hidden">Choose group A</h2>
+    <div id="names-container"></div>
+    <button id="submit-group-a">Submit group A</button>
+    <button id="submit-group-b">Submit group B</button>
+    <button id="submit-groups">Submit groups</button>
+    <table id="schedule-table">
+      <tr>
+        <th>Group</th>
+        <th>Work Time</th>
+        <th>Names</th>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
